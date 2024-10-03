@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
 
-    private static BlockingQueue<Order> queue = new ArrayBlockingQueue<>(5);
+    private static BlockingQueue<Order> queue = new ArrayBlockingQueue<>(10);
     private static Map<String, Integer> storage = new ConcurrentHashMap<>();
 
     public static void main(String[] args) {

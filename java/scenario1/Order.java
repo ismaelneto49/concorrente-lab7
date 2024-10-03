@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class Order {
     private String id; 
     private OrderStatus status;
