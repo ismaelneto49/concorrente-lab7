@@ -3,6 +3,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Client implements Runnable {
@@ -19,7 +20,7 @@ public class Client implements Runnable {
                             Arrays.asList("Banana", "Laranja", "Siriguela", "Cagaita", "Pitomba", "Macaiba").get(index),
                             ((index*2)+1)
                     ))
-                    .toList();
+                    .collect(Collectors.toList());
 
     public Client (BlockingQueue<Order> queue, String id, Object printing) {
         this.id = id;
