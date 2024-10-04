@@ -7,4 +7,5 @@ public class SaleItem {
   public Map<Product, Integer> getItems() {
     return items;
   }
+
 }
